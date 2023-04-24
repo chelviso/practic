@@ -7,7 +7,7 @@ pipeline{
     stage('1GetCode'){
       steps{
         sh "echo 'cloning the latest application version' "
-        git branch: '*', credentialsId: 'githubcodefinal', url: 'https://github.com/chelviso/practic'
+        git branch: 'main', credentialsId: 'githubcodefinal', url: 'https://github.com/chelviso/practic'
       }
     }
     stage('3Test+Build'){
